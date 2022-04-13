@@ -2,7 +2,7 @@
   
 ##  1º Step
  
- Since we are in Windows, the best way to detect USB pendrives, is to run the comand on the powershell:
+ First we need to get the best way of detecting the drivers connected to the computer, since we are in Windows, the best way to detect USB pendrives, is to run the comand on the powershell:
  ```
  Get-WmiObject -Class Win32_LogicalDisk
  ```
@@ -20,5 +20,10 @@
     + 4 : Network Drive
     + 5 : Compact Disc
     + 6 : Ram Disk
+
+Since i just need this 5 important informations , i will just run the code to exclusively get them and convert them directly to json:
+ ```
+ Get-WmiObject -Class Win32_LogicalDisk | Select-Object deviceid, volumeserialnumber, drivetype, freespace, size| ConvertTo-Json
+ ```
 
 
