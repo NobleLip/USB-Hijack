@@ -2,6 +2,8 @@
 
 ## First Steps
   
+ 1º Step
+ 
  Since we are in Windows, the best way to detect USB pendrives, is to run the comand on the powershell:
  ```
  Get-WmiObject -Class Win32_LogicalDisk
@@ -20,3 +22,5 @@
     + 4 : Network Drive
     + 5 : Compact Disc
     + 6 : Ram Disk
+
+
