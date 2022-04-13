@@ -1,8 +1,6 @@
 # USB-Hijack
-
-## First Steps
   
- 1º Step
+##  1º Step
  
  Since we are in Windows, the best way to detect USB pendrives, is to run the comand on the powershell:
  ```
