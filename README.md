@@ -43,4 +43,4 @@ First, I was using zipfile library to do this, but I came across shutil library,
 
 Just run the code in the background, and let it do the work, every 10 seconds the code search for a USB Removable Driver, if detected the data of the usb will be hijacked. 
 
-** Dont Remove the Driver, let the Script compress all the files before u do **
+**Dont Remove the Driver, let the Script compress all the files before u do**
