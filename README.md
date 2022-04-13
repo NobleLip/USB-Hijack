@@ -36,5 +36,11 @@ Since i just need this 5 important informations , i will just run the code to ex
 
 ## 2º Step
 
-After step one is done , we just need to convert all the data to a compressed file and store it with the proper name, in this case the name will be the Volume Serial Number.
-First i was using zipfile library to do this, but i came across shutil library, since i dont need to over comlicate the project i used shutil to compress the directory and store it on the same folder as the script.
+After step one is done, we just need to convert all the data to a compressed file and store it with the proper name, in this case, the name will be the Volume Serial Number. 
+First, I was using zipfile library to do this, but I came across shutil library, since i dont need to over comlicate the project i used shutil to compress the directory and store it on the same folder as the script.
+
+## 3º Step
+
+Just run the code in the background, and let it do the work, every 10 seconds the code search for a USB Removable Driver, if detected the data of the usb will be hijacked. 
+
+** Dont Remove the Driver, let the Script compress all the files before u do **
