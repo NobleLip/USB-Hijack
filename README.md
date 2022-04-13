@@ -1,4 +1,12 @@
 # USB-Hijack
+```
+UU   UU  SSSSS  BBBBB          HH   HH iii   jjj                kk     
+UU   UU SS      BB   B         HH   HH             aa aa   cccc kk  kk 
+UU   UU  SSSSS  BBBBBB  _____  HHHHHHH iii   jjj  aa aaa cc     kkkkk  
+UU   UU      SS BB   BB        HH   HH iii   jjj aa  aaa cc     kk kk  
+ UUUUU   SSSSS  BBBBBB         HH   HH iii   jjj  aaa aa  ccccc kk  kk 
+                                           jjjj                        
+```
   
 ##  1º Step
  
@@ -26,4 +34,7 @@ Since i just need this 5 important informations , i will just run the code to ex
  Get-WmiObject -Class Win32_LogicalDisk | Select-Object deviceid, volumeserialnumber, drivetype, freespace, size| ConvertTo-Json
  ```
 
+## 2º Step
 
+After step one is done , we just need to convert all the data to a compressed file and store it with the proper name, in this case the name will be the Volume Serial Number.
+First i was using zipfile library to do this, but i came across shutil library, since i dont need to over comlicate the project i used shutil to compress the directory and store it on the same folder as the script.
