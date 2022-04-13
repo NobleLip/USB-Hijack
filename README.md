@@ -11,6 +11,7 @@
   + Volume Serail Number -> Used to blacklist the driver after the hijack, to prevent deleting old files and run the code over and over.
   + Free Space           -> Free Space of the Drive.
   + Size                 -> Size of the Drive.
+  
   + Driver Type:
     + 0 : Unknown
     + 1 : No Root Directory
